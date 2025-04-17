@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 .hero {
     position: relative; /* Needed for absolute positioning of ::before */
     background-image: url('frame.png');
@@ -26,6 +29,15 @@
     z-index: 1;
 }
 
+.com_card a{
+    text-decoration: none;
+}
+.com-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
 
 .hero > * {
     position: relative;
@@ -92,6 +104,7 @@
   .nav-links a:hover {
     color: #ddd;
   }
+  
 
   /* Responsive styles */
   @media (max-width: 768px) {
@@ -153,9 +166,13 @@
   }
 
   @media screen and (max-width: 768px) {
+
     .hero-text {
       padding: 5% 5%;
     }
+    .nav-links li {
+        margin: 0.8rem 0rem;
+      }
    .hero-text h1{
     font-size: 50px !important;
    }
@@ -183,11 +200,184 @@
    .hero-text h1{
     font-size: 50px !important;
    }
+
    .hero-text h2{
     font-size: 20px !important;
    }
     .hero-text p{
         margin-top: 20px;
      font-size: 15px !important;
+    }
+  }
+
+
+
+  .dates {
+    background-color: #080720;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+
+  .dates h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+
+  .dates .card {
+    background-color: #d9d9d9;
+    color: black;
+    border-radius: 16px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .dates .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .dates .card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .dates .card p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+
+  /* Text & bottom section */
+  .dates .text-center {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  .dates hr {
+    border-color: white;
+    opacity: 0.2;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .card-row {
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dates h1 {
+      font-size: 1.8rem;
+    }
+  }
+.scope h1{
+    margin: 50px 0;
+    text-align: center;
+    font-weight: 700;
+}
+.scope h5{
+    margin: 20px 0;
+}
+.scope{
+    margin-bottom: 50px;
+}
+  /* Base styles */
+.committee {
+    background-color: #080720;
+    color: white;
+    padding: 3rem 1rem;
+  }
+ .committee h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 10px ;
+    margin-bottom: 30px;
+    text-align: center;
+ }
+  .committee h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    position: relative;
+    left: 16px;
+  }
+
+  .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Adds spacing between cards */
+    justify-content: center;
+  }
+
+  .com_card {
+    display: flex;
+    align-items: center;
+    background-color: #e6e6e6;
+    color: #000;
+    border-radius: 12px;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .com_card:hover {
+    transform: translateY(-5px);
+  }
+
+  .com_card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 2px solid #ccc;
+  }
+
+  .com_card h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .com_card div h3:nth-child(2) {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .com_card .d-flex {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .com_card .d-flex p {
+    font-size: 0.85rem;
+    color: #333;
+    margin: 0;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .com_card {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .com_card img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 0.5rem;
     }
   }

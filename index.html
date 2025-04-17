@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero">
+    <div class="hero" id="home">
       <nav class="navbar">
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">☰</div>
         <ul class="nav-links" id="navLinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Workshop</a></li>
-          <li><a href="#">Important Dates</a></li>
-          <li><a href="#">Speakers</a></li>
-          <li><a href="#">Committee</a></li>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Paper Submission</a></li>
-          <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#workshop">Workshop</a></li>
+            <li><a href="#important-dates">Important Dates</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#committee">Committee</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#submission">Paper Submission</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -60,12 +60,296 @@
       </div>
     </div>
 
-    <script>
-      function toggleMenu() {
-        const navLinks = document.getElementById("navLinks");
-        navLinks.classList.toggle("show");
+    <section class="scope" id="workshop">
+        <div class="container">
+            <h1>Scope and Motivation</h1>
+            <p>
+                Since 2010, the year of initiation of annual Imagenet Competition where  research teams submit programs that classify and detect objects, machine learning has gained significant popularity. In the present age, Machine learning, in particular deep learning, is incredibly powerful to make  predictions based on large amounts of available data. There are many  applications of machine learning in Computer vision, pattern recognition including Document analysis, Medical image analysis etc. In order to  facilitate innovative collaboration and engagement between document  analysis community and other research communities like computer vision  and images analysis etc., here we plan to organize this workshop of  Machine learning after the ICDAR main conference.
+            </p>
+            <h5>
+                The topics of interest of this workshop include, but are not limited to:
+            </h5>
+            <ul>
+                <li>Analysis and recognition of document images and handwritings using machine learning, such as Deep learning,</li>
+                <li>
+                    Convolutional Neural Network (CNN),
+                </li>
+                <li>
+                    Recurrent Neural Network,
+                </li>
+                <li>
+                    Semantic Analysis (e.g., Word Embedding and Topic Models)
+                </li>
+                <li>
+                    Graphical Models and Their Optimization (e.g., HMM and CRF/MRF)
+                </li>
+                <li>
+                    Feature Reduction and Selection (e.g., Sparse Representation and Latent Space Analysis)
+                </li>
+                <li>
+                    Metric Learning, self supervise learning, Ensemble Learning (e.g., Boosting and Random Forests)
+                </li>
+                <li>
+                    Support Vector Machine (SVM),
+                </li>
+                <li>
+                    Transformer based methods,
+                </li>
+                <li>
+                    Instance-Based Methods (e.g., k-Nearest Neighbour classifier)
+                </li>
+                <li>
+                    LLMs on document analysis,
+                </li>
+                <li>
+                    Vision Transformers,
+                </li>
+                <li>
+                    NLP+Vision multimodal approaches , etc.
+                </li>
+            </ul>
+            <h5>
+                Relevance for ICDAR:
+            </h5>
+            <p>
+                Since Machine Learning has been used largely in document analysis area hence this workshop has very much relevance with ICDAR.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="dates" id="important-dates">
+      <div class="container">
+        <h1>Important Dates</h1>
+        <div class="card-row">
+            <div class="card ">
+                <h3>Paper Submission</h3>
+                <p>May 15, 2025</p>
+            </div>
+            <div class="card ">
+                <h3>Notification of Acceptance</h3>
+                <p>June 15, 2025</p>
+            </div>
+            <div class="card ">
+                <h3>Camera Ready Submission</h3>
+                <p>July 15, 2025</p>
+            </div>
+            <div class="card ">
+                <h3>Workshop Date</h3>
+                <p>September 20, 2025</p>
+            </div>
+        </div>
+        <p class="text-center mt-4 " id="program">
+            ICDAR-WML 2025 Workshop Program will be updated soon
+        </p>
+        <hr value="1" style="color: white; margin: 5% 0;" />
+        <h1 id="speakers">Keynote Speakers</h1>
+        <p>
+            The Keynote Speakers will be updated soon.
+        </p>
+    </div>
+    </section>
+
+    <section class="scope" id="submission">
+        <div class="container">
+            <h1>Paper Submission</h1>
+             <p>
+                Papers should be submitted via CMT.
+             </p>
+             <p>
+                Here is the link:
+                <a href="https://cmt3.research.microsoft.com/ICDARWML2025" target="_blank">
+                    https://cmt3.research.microsoft.com/ICDARWML2025
+                </a>
+             </p>
+             <p>
+                WML 2025 will follow a double-blind review process.  Authors should not include their names and affiliations anywhere in the  manuscript and  				authors should also ensure that their identity is not revealed  indirectly by citing their previous work in the third person
+             </p>
+             <h5>
+                The topics of interest of this workshop include, but are not limited to:
+            </h5>
+            <ul>
+                <li>Analysis and recognition of document images and handwritings using machine learning, such as Deep learning,</li>
+                <li>
+                    Convolutional Neural Network (CNN),
+                </li>
+                <li>
+                    Recurrent Neural Network,
+                </li>
+                <li>
+                    Semantic Analysis (e.g., Word Embedding and Topic Models)
+                </li>
+                <li>
+                    Graphical Models and Their Optimization (e.g., HMM and CRF/MRF)
+                </li>
+                <li>
+                    Feature Reduction and Selection (e.g., Sparse Representation and Latent Space Analysis)
+                </li>
+                <li>
+                    Metric Learning, self supervise learning, Ensemble Learning (e.g., Boosting and Random Forests)
+                </li>
+                <li>
+                    Support Vector Machine (SVM),
+                </li>
+                <li>
+                    Transformer based methods,
+                </li>
+                <li>
+                    Instance-Based Methods (e.g., k-Nearest Neighbour classifier)
+                </li>
+                <li>
+                    LLMs on document analysis,
+                </li>
+                <li>
+                    Vision Transformers,
+                </li>
+                <li>
+                    NLP+Vision multimodal approaches , etc.
+                </li>
+            </ul>
+            <p>
+                We request you to submit your research work in this workshop.
+            </p>
+            <p>
+                Paper Length and publication of Proceedings :
+            </p>
+            <p>
+                The submitted papers in ICDAR-WML 2025 will have the same policy and  				conditions of ICDAR 2025 main conference papers and the ICDAR-WML 2025 				proceedings will be published under the Springer Lecture Notes in Computer  				Science (LNCS) series. Length of the submitted papers will be up to 15 pages  				in the proceedings, including references. Papers should be formatted (latex 				or in Word) according to the instructions and style files provided by Springer 				available in  <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank" >
+                    https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines
+                </a>
+            </p>
+        </div>
+
+    </section>
+
+    <section class="committee" id="committee">
+         <div class="container">
+            <h1>Committee</h1>
+            <h2>Workshop Chairs</h2>
+            <div class="card-row row">
+                <div class="com_card col-md-6 ">
+                    <img src="Umapada-Pal.jpg" alt="">
+                    <div>
+                        <a class="com-name" href="https://www.isical.ac.in/~umapada/" target="_blank">
+                            Umapada Pal
+                        </a>
+                        <h3>Indian Statistical Institute, Kolkata, India</h3>
+                        <div class="d-flex">
+                            <a class="dblp" href="https://dblp.org/pid/p/UmapadaPal.html" target="_blank">DBLP</a>
+                            <p>.</p>
+                            <a href="https://scholar.google.co.in/citations?user=2_z_CogAAAAJ&hl=en" target="_blank">
+                                Google Scholar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="com_card col-md-6 ">
+                    <img src="venu.jpeg" alt="">
+                    <div>
+                        <a class="com-name" href="https://www.buffalo.edu/research/about-us/leadership/venu-govindaraju.html" target="_blank">
+                            Venu Govindaraju
+                        </a>
+                        <h3>University of Buffalo, USA</h3>
+                        <div class="d-flex">
+                            <a class="dblp" href="https://dblp.org/pid/g/VenuGovindaraju.html" target="_blank">DBLP</a>
+                            <p>.</p>
+                            <a href="https://scholar.google.com/citations?user=ruIgbscAAAAJ&hl=en" target="_blank">
+                                Google Scholar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="com_card col-md-6 ">
+                    <img src="Xiaojun.jpg" alt="">
+                    <div>
+                        <a class="com-name" href="http://kjc.jiangnan.edu.cn/jgsz/wxj1.htm" target="_blank">
+                            Xiao-jun Wu
+                        </a>
+                        <h3>Jiangnan University, China</h3>
+                        <div class="d-flex">
+                            <a class="dblp" href="https://dblp.org/pid/13/5168-1.html" target="_blank">DBLP</a>
+                            <p>.</p>
+                            <a href="https://scholar.google.co.uk/citations?user=5IST34sAAAAJ&hl=en" target="_blank">
+                                Google Scholar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+    <section class="committee">
+        <div class="container">
+           <h2>Program Chairs</h2>
+           <div class="card-row row">
+               <div class="com_card col-md-6 ">
+                   <img src="michael.jpg" alt="">
+                   <div>
+                       <h3>Michael Blumenstein</h3>
+                       <h3>University of Technology Sydney, Australia</h3>
+
+                   </div>
+               </div>
+               <div class="com_card col-md-6 ">
+                   <img src="Eric.jpg" alt="">
+                   <div>
+                       <h3>Eric Granger</h3>
+                       <h3>École de Technologie Supérieure (ETS), Montreal, Canada</h3>
+                   </div>
+               </div>
+               <div class="com_card col-md-6 ">
+                   <img src="Shivakumara.jpg" alt="">
+                   <div>
+                       <h3>Shivakumara Palaiahnakote</h3>
+                       <h3>University of Malaya, Malaysia</h3>
+                   </div>
+               </div>
+               <div class="com_card col-md-6 ">
+                <img src="Coustaty.jpeg" alt="">
+                <div>
+                    <h3>Mickael Coustaty</h3>
+                    <h3>University of La Rochelle, France</h3>
+                </div>
+            </div>
+           </div>
+        </div>
+   </section>
+   <section class="committee">
+    <div class="container">
+       <h2>Organizing Chairs</h2>
+       <div class="card-row row">
+           <div class="com_card col-md-6 ">
+               <img src="Saumik Bhattacharya.jpg" alt="">
+               <div>
+                   <h3>Saumik Bhattacharya</h3>
+                   <h3>Indian Institute of Technology Kharagpur, India</h3>
+               </div>
+           </div>
+           <div class="com_card col-md-6 ">
+               <img src="Kaushik Roy.jpeg" alt="">
+               <div>
+                   <h3>Kaushik Roy</h3>
+                   <h3>West Bengal State University, India</h3>
+               </div>
+           </div>
+       </div>
+    </div>
+</section>
+<script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      const hamburger = document.getElementById("hamburger");
+
+      navLinks.classList.toggle("show");
+
+      // Toggle the symbol
+      if (navLinks.classList.contains("show")) {
+        hamburger.textContent = "✖";
+      } else {
+        hamburger.textContent = "☰";
       }
-    </script>
+    }
+  </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
