@@ -221,7 +221,9 @@ html {
 
 
 .dates {
-  background-color: #080720;
+  background: linear-gradient(90deg, #6f1a7b, #0d1a46); /* left to right gradient */
+  color: white;
+  font-family: 'Arial', sans-serif;
   color: white;
   padding: 4rem 1rem;
   text-align: center;
@@ -294,11 +296,21 @@ html {
   margin: 20px 0;
 }
 .scope{
-  margin-bottom: 50px;
+  background: linear-gradient(135deg, #2d0b39, #1a0641);
+    padding: 40px;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+@media (max-width: 500px){
+  .scope{
+    padding: 20px;
+  }
 }
 /* Base styles */
 .committee {
-  background-color: #080720;
+  background: linear-gradient(90deg, #6f1a7b, #0d1a46); /* left to right gradient */
+  color: white;
+  font-family: 'Arial', sans-serif;
   color: white;
   padding: 3rem 1rem;
 }
@@ -406,6 +418,7 @@ html {
   margin: 0 auto;
   gap: 20px;
 }
+
 
 .footer-left img.footer-image {
   max-width: 250px;
